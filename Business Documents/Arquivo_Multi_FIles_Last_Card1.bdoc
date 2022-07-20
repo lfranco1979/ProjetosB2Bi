@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<businessDocument xmlns="http://www.axway.com/mappingServices/flatFileBusinessDocument" keepInputNumberFractionDigits="true" encodingBD="iso8859" keepDecimalSeparator="true" id="17d4438b-c656-496a-9a05-e5090ea340b4" keepDecimalSeparatorCharacter="true" keepInputNumberDateDigits="true">
+   <signature appVersion="3.1.2" lastUpdatedOn="11/06/2017 21:32:37 -0300"/>
+   <childElements>
+      <childElement factoryType="FlatFileParent" order="1" label="Root" name="Root" parentDelimiterElement="3" hash="-1112243024">
+         <cardinality minimum="1" maximum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileParent" order="2" name="Header1" parentDelimiterElement="3" hash="-1649099659">
+               <cardinality minimum="1" maximum="1"/>
+               <childElements>
+                  <childElement factoryType="FlatFileLeaf" definition="20" typeId="10" paddingCharElement=" " name="Qual" paddingPosElement="1" order="3" keepDecimalSeparator="true" encodingElement="iso8859" hash="842122281" allowDistortion="true">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="FlatFileLeaf" definition="9" typeId="10" paddingCharElement=" " name="Partner" paddingPosElement="1" order="4" keepDecimalSeparator="true" encodingElement="iso8859" hash="662852202" allowDistortion="true">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="FlatFileLeaf" definition="1,1000" typeId="10" leafDelimiterElementValue="0x0a" paddingCharElement=" " name="Filler" leafDelimiterElement="2" paddingPosElement="1" order="5" keepDecimalSeparator="true" encodingElement="iso8859" hash="129952255" allowDistortion="true">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="FlatFileParent" order="6" name="Header" parentDelimiterElement="3" hash="444455758">
+               <cardinality minimum="1" maximum="1"/>
+               <childElements>
+                  <childElement factoryType="FlatFileLandMark" definition="2" typeId="10" paddingCharElement=" " name="HeaderId" defaultValue="02" paddingPosElement="1" order="7" keepDecimalSeparator="true" encodingElement="iso8859" hash="-37225491" allowDistortion="true">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="FlatFileLeaf" definition="1,1000" typeId="10" leafDelimiterElementValue="0x0a" paddingCharElement=" " name="HeaderFields" leafDelimiterElement="2" paddingPosElement="1" order="8" keepDecimalSeparator="true" encodingElement="iso8859" hash="1341461175" allowDistortion="true">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="FlatFileParent" order="9" name="Detail" parentDelimiterElement="3" hash="722061553">
+               <cardinality minimum="1"/>
+               <childElements>
+                  <childElement factoryType="FlatFileLandMark" definition="2" typeId="10" paddingCharElement=" " name="DetailId" defaultValue="10" paddingPosElement="1" order="10" keepDecimalSeparator="true" encodingElement="iso8859" hash="1658702971" allowDistortion="true">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="FlatFileLeaf" definition="1,1000" typeId="10" leafDelimiterElementValue="0x0a" paddingCharElement=" " name="DetailFields" leafDelimiterElement="2" paddingPosElement="1" order="11" keepDecimalSeparator="true" encodingElement="iso8859" hash="1354976943" allowDistortion="true">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="FlatFileParent" order="12" name="Trailer" parentDelimiterElement="3" hash="919988059">
+               <cardinality minimum="1" maximum="1"/>
+               <childElements>
+                  <childElement factoryType="FlatFileLandMark" definition="2" typeId="10" paddingCharElement=" " name="trailerId" defaultValue="90" paddingPosElement="1" order="13" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1474587402" allowDistortion="true">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="FlatFileLeaf" definition="1,1000" typeId="10" leafDelimiterElementValue="0x0a" paddingCharElement=" " name="TrailerFields" leafDelimiterElement="2" paddingPosElement="1" order="14" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1836953982" allowDistortion="true">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+         </childElements>
+      </childElement>
+   </childElements>
+</businessDocument>

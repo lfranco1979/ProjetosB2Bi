@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="e5c33b28-5df9-48ae-b905-e67347d98682">
+   <signature appVersion="3.1.2" lastUpdatedOn="14/01/2022 13:21:06 -0300"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/CNAB400.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/CNAB400.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="212828884" elementPath="/Root/Detalhe/Uso_da_Empresa/">
+         <dmlExpression><![CDATA[this\Uso_da_Empresa]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1721533831" elementPath="/Root/Detalhe/Descontos/">
+         <dmlExpression><![CDATA[this\Descontos]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1257272485" elementPath="/Root/Detalhe/Zeros_1/">
+         <dmlExpression><![CDATA[this\Zeros_1]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1119540917" elementPath="/Root/Trailler/Qtde_Titulos_3/">
+         <dmlExpression><![CDATA[in:\Root\Trailler\Qtde_Titulos_3]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1121600529" elementPath="/Root/Detalhe/Data_Credito/">
+         <dmlExpression><![CDATA[this\Data_Credito]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1001291689" elementPath="/Root/Detalhe/DAC/">
+         <dmlExpression><![CDATA[this\DAC]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-2003247837" elementPath="/Root/Detalhe/Outros_Creditos/">
+         <dmlExpression><![CDATA[this\Outros_Creditos]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1936973343" elementPath="/Root/Detalhe/Agencia_Cobradora/">
+         <dmlExpression><![CDATA[this\Agencia_Cobradora]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1491966628" elementPath="/Root/Detalhe/Instr_Cancelada/">
+         <dmlExpression><![CDATA[this\Instr_Cancelada]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-672039784" elementPath="/Root/Trailler/Brancos/">
+         <dmlExpression><![CDATA[in:\Root\Trailler\Brancos]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="770005106" elementPath="/Root/Detalhe/Brancos/">
+         <dmlExpression><![CDATA[this\Brancos]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1071981806" elementPath="/Root/Header/Numero_Seq_Retorno/">
+         <dmlExpression><![CDATA[in:\Root\Header\Numero_Seq_Retorno]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1154079006" elementPath="/Root/Header/Codigo_do_Servico/">
+         <dmlExpression><![CDATA[in:\Root\Header\Codigo_do_Servico]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="275341575" elementPath="/Root/Detalhe/Brancos_2/">
+         <dmlExpression><![CDATA[this\Brancos_2]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1612049822" elementPath="/Root/Detalhe/Carteira_2/">
+         <dmlExpression><![CDATA[this\Carteira_2]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-225129958" elementPath="/Root/Header/Complemento_Registro/">
+         <dmlExpression><![CDATA[in:\Root\Header\Complemento_Registro]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1168444344" elementPath="/Root/Detalhe/Numero_Sequencial/">
+         <dmlExpression><![CDATA[this\Numero_Sequencial]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1444023251" elementPath="/Root/Header/Identificacao_Sistema/">
+         <dmlExpression><![CDATA[in:\Root\Header\Identificacao_Sistema]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="337415481" elementPath="/Root/Trailler/Qtde_Titulos_2/">
+         <dmlExpression><![CDATA[in:\Root\Trailler\Qtde_Titulos_2]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="138616784" elementPath="/Root/Trailler/Controle_Arquivo/">
+         <dmlExpression><![CDATA[in:\Root\Trailler\Controle_Arquivo]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="33828692" elementPath="/Root/Trailler/Qtde_Detalhes/">
+         <dmlExpression><![CDATA[in:\Root\Trailler\Qtde_Detalhes]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="380355946" elementPath="/Root/Detalhe/Valor_IOF/">
+         <dmlExpression><![CDATA[this\Valor_IOF]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="948770888" elementPath="/Root/Trailler/Brancos_4/">
+         <dmlExpression><![CDATA[in:\Root\Trailler\Brancos_4]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1519938968" elementPath="/Root/Detalhe/Nosso_Numero_1/">
+         <dmlExpression><![CDATA[this\Nosso_Numero_1]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="444642424" elementPath="/Root/Detalhe/Brancos_4/">
+         <dmlExpression><![CDATA[this\Brancos_4]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="65440581" elementPath="/Root/Header/Codigo_Banco/">
+         <dmlExpression><![CDATA[in:\Root\Header\Codigo_Banco]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1560112701" elementPath="/Root/Detalhe/Zeros/">
+         <dmlExpression><![CDATA[this\Zeros]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="493271538" elementPath="/Root/Detalhe/Cod_Ocorrencia/">
+         <dmlExpression><![CDATA[this\Cod_Ocorrencia]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2095313571" elementPath="/Root/Detalhe/Tarifa_Cobranca/">
+         <dmlExpression><![CDATA[this\Tarifa_Cobranca]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-701049686" elementPath="/Root/Detalhe/Conta/">
+         <dmlExpression><![CDATA[this\Conta]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1858183177" elementPath="/Root/Detalhe/Brancos_7/">
+         <dmlExpression><![CDATA[this\Brancos_7]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1372118515" elementPath="/Root/Detalhe/Erro/">
+         <dmlExpression><![CDATA[this\Erro]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1000431859" elementPath="/Root/Detalhe/Brancos_3/">
+         <dmlExpression><![CDATA[this\Brancos_3]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="280429570" elementPath="/Root/Detalhe/Vencimento/">
+         <dmlExpression><![CDATA[this\Vencimento]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-597944250" elementPath="/Root/Detalhe/Cod_Liquidacao/">
+         <dmlExpression><![CDATA[this\Cod_Liquidacao]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1333016358" elementPath="/Root/Detalhe/Brancos_1/">
+         <dmlExpression><![CDATA[this\Brancos_1]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1363238125" elementPath="/Root/Trailler/Aviso_Bancario/">
+         <dmlExpression><![CDATA[in:\Root\Trailler\Aviso_Bancario]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-183357474" elementPath="/Root/Detalhe/Juros_de_Mora/">
+         <dmlExpression><![CDATA[this\Juros_de_Mora]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1225355876" elementPath="/Root/Detalhe/Especie/">
+         <dmlExpression><![CDATA[this\Especie]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1599999056" elementPath="/Root/Trailler/Brancos_2/">
+         <dmlExpression><![CDATA[in:\Root\Trailler\Brancos_2]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="706302998" elementPath="/Root/Trailler/Qtde_Titulos/">
+         <dmlExpression><![CDATA[in:\Root\Trailler\Qtde_Titulos]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1120384029" elementPath="/Root/Detalhe/Brancos_5/">
+         <dmlExpression><![CDATA[this\Brancos_5]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-293338786" elementPath="/Root/Trailler/Valor_Total/">
+         <dmlExpression><![CDATA[in:\Root\Trailler\Valor_Total]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1105569779" elementPath="/Root/Detalhe/Data_Ocorrencia/">
+         <dmlExpression><![CDATA[this\Data_Ocorrencia]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-138042390" elementPath="/Root/Detalhe/Boleto_DDA/">
+         <dmlExpression><![CDATA[this\Boleto_DDA]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1262828085" elementPath="/Root/Detalhe/Brancos_8/">
+         <dmlExpression><![CDATA[this\Brancos_8]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="712650906" elementPath="/Root/Trailler/Brancos_3/">
+         <dmlExpression><![CDATA[in:\Root\Trailler\Brancos_3]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="223927874" elementPath="/Root/Trailler/Aviso_Bancario_2/">
+         <dmlExpression><![CDATA[in:\Root\Trailler\Aviso_Bancario_2]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-374459394" elementPath="/Root/Detalhe/Agencia/">
+         <dmlExpression><![CDATA[this\Agencia]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1274174567" elementPath="/Root/Trailler/Tipo_Registro/">
+         <dmlExpression><![CDATA[in:\Root\Trailler\Tipo_Registro]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1818080998" elementPath="/Root/Detalhe/Codigo_Inscricao/">
+         <dmlExpression><![CDATA[this\Codigo_Inscricao]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="473137277" elementPath="/Root/Header/Numero_Sequencial/">
+         <dmlExpression><![CDATA[in:\Root\Header\Numero_Sequencial]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-134460766" elementPath="/Root/Header/Data_Geracao/">
+         <dmlExpression><![CDATA[in:\Root\Header\Data_Geracao]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1516815613" elementPath="/Root/Header/Literal_de_Retorno/">
+         <dmlExpression><![CDATA[in:\Root\Header\Literal_de_Retorno]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1050880192" elementPath="/Root/Header/Nome_Empresa/">
+         <dmlExpression><![CDATA[in:\Root\Header\Nome_Empresa]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1607284502" elementPath="/Root/Header/Nome_Banco/">
+         <dmlExpression><![CDATA[in:\Root\Header\Nome_Banco]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1645127664" elementPath="/Root/Header/Tipo_de_Registro/">
+         <dmlExpression><![CDATA[setAttribute("B2BXGISend_Cedente", "0000034");
+in:\Root\Header\Tipo_de_Registro]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-296950757" elementPath="/Root/Detalhe/Tipo_Registro/">
+         <dmlExpression><![CDATA[this\Tipo_Registro]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="683965860" elementPath="/Root/Detalhe/Nome_Sacado/">
+         <dmlExpression><![CDATA[this\Nome_Sacado]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2056102434" elementPath="/Root/Header/Literal_de_Servico/">
+         <dmlExpression><![CDATA[in:\Root\Header\Literal_de_Servico]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1192251463" elementPath="/Root/Detalhe/Carteira_1/">
+         <dmlExpression><![CDATA[this\Carteira_1]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="76305265" elementPath="/Root/Detalhe/Num_Documento/">
+         <dmlExpression><![CDATA[this\Num_Documento]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1132363039" elementPath="/Root/Detalhe/Valor_Titulo/">
+         <dmlExpression><![CDATA[this\Valor_Titulo]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1638672205" elementPath="/Root/Trailler/Codigo_Retorno/">
+         <dmlExpression><![CDATA[in:\Root\Trailler\Codigo_Retorno]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1231610822" elementPath="/Root/Detalhe/Brancos_6/">
+         <dmlExpression><![CDATA[this\Brancos_6]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-553689963" elementPath="/Root/Header/Branco/">
+         <dmlExpression><![CDATA[in:\Root\Header\Branco]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1439766179" elementPath="/Root/Detalhe/Codigo_Banco/">
+         <dmlExpression><![CDATA[this\Codigo_Banco]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1483051035" elementPath="/Root/Detalhe/Numero_Inscricao/">
+         <dmlExpression><![CDATA[this\Numero_Inscricao]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1558875849" elementPath="/Root/Detalhe/Valor_Abatimento/">
+         <dmlExpression><![CDATA[this\Valor_Abatimento]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="96930071" elementPath="/Root/Detalhe/">
+         <dmlExpression><![CDATA[for each in:\Root\Detalhe]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1096378155" elementPath="/Root/Detalhe/DAC_Ag_Cobradora/">
+         <dmlExpression><![CDATA[this\DAC_Ag_Cobradora]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1166598657" elementPath="/Root/Trailler/Valor_Total_Informado/">
+         <dmlExpression><![CDATA[in:\Root\Trailler\Valor_Total_Informado]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1049021478" elementPath="/Root/Trailler/Valor_Total_3/">
+         <dmlExpression><![CDATA[in:\Root\Trailler\Valor_Total_3]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="201025664" elementPath="/Root/Trailler/Codigo_Banco/">
+         <dmlExpression><![CDATA[in:\Root\Trailler\Codigo_Banco]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="470268404" elementPath="/Root/Header/Codigo_Empresa/">
+         <dmlExpression><![CDATA[in:\Root\Header\Codigo_Empresa]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="261818489" elementPath="/Root/Detalhe/DAC_Nosso_Numero/">
+         <dmlExpression><![CDATA[this\DAC_Nosso_Numero]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1345343047" elementPath="/Root/Detalhe/Nosso_Numero_2/">
+         <dmlExpression><![CDATA[this\Nosso_Numero_2]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-730529147" elementPath="/Root/Trailler/Aviso_Bancario_3/">
+         <dmlExpression><![CDATA[in:\Root\Trailler\Aviso_Bancario_3]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-216895716" elementPath="/Root/Trailler/Codigo_Servico/">
+         <dmlExpression><![CDATA[in:\Root\Trailler\Codigo_Servico]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1740493144" elementPath="/Root/Header/Codigo_de_Retorno/">
+         <dmlExpression><![CDATA[in:\Root\Header\Codigo_de_Retorno]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-622930490" elementPath="/Root/Trailler/Numero_Sequencial/">
+         <dmlExpression><![CDATA[in:\Root\Trailler\Numero_Sequencial]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1918321541" elementPath="/Root/Detalhe/Valor_Principal/">
+         <dmlExpression><![CDATA[this\Valor_Principal]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1070431789" elementPath="/Root/Detalhe/Nosso_Numero/">
+         <dmlExpression><![CDATA[this\Nosso_Numero]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="224347238" elementPath="/Root/Trailler/Valor_Total_2/">
+         <dmlExpression><![CDATA[in:\Root\Trailler\Valor_Total_2]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>

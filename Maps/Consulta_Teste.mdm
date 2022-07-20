@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="c2577a22-a447-4489-87c8-bb8e8b191034">
+   <signature appVersion="3.1.2" lastUpdatedOn="16/12/2021 09:11:02 -0300"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/TESTE2.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/PEFISA_CONSULTA_DB_Resultset.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="-741327492" elementPath="/Root/SituacaoArquivo/">
+         <dmlExpression><![CDATA[this\pefisaconsulta__SituacaoArquivo]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="86549880" elementPath="/Root/IdEmissor/">
+         <dmlExpression><![CDATA[this\pefisaconsulta__idEmissor]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="219224607" elementPath="/Root/">
+         <dmlExpression><![CDATA[for each in:\root1]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="576687860" elementPath="/Root/DataEnvio/">
+         <dmlExpression><![CDATA[this\pefisaconsulta__DataEnvio]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="95253270" elementPath="/Root/Produto/">
+         <dmlExpression><![CDATA[this\pefisaconsulta__Horario]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<customFunction xmlns="http://www.axway.com/mappingServices/javaCustomFunction" channel="NONE" category="JAVA" dmlClassReturn="S" id="b74fabad-3a71-4b2f-8eb7-d8057544c2a7">
+   <signature appVersion="3.1.2" lastUpdatedOn="14/02/2022 10:25:27 -0300"/>
+</customFunction>

@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "properties": {
+      "DataEnvio": {
+        "type": "string"
+      },
+      "Produto": {
+        "type": ["string", "null"]
+      },
+      "IdEmissor": {
+        "type": ["string", "null"]
+      }
+    },
+    "required": [
+      "IdEmissor"
+    ]
+}

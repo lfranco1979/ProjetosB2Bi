@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseMap xmlns="http://www.axway.com/mappingServices/databaseMap" databaseHost="3.212.157.101" type="SELECT" databasePort="3306" databaseName="%" databaseType="MySql" id="19709f4f-03c8-4210-8a04-f6af3d790027">
+   <signature appVersion="3.1.2" lastUpdatedOn="17/12/2021 14:13:49 -0300"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/PEFISA_CONSULTA_DB_Resultset.bdoc" alias="out"/>
+   <expression><![CDATA[select `pefisaconsulta`.`DataEnvio`,
+	`pefisaconsulta`.`Horario`,
+	`pefisaconsulta`.`NomeArquivo`,
+	`pefisaconsulta`.`Produto`,
+	`pefisaconsulta`.`QtdeRegistros`,
+	`pefisaconsulta`.`Controle`,
+	`pefisaconsulta`.`Total`,
+	`pefisaconsulta`.`SituacaoArquivo`,
+	`pefisaconsulta`.`idEmissor`
+from `pefisaconsulta`
+where (`pefisaconsulta`.`idEmissor` = #idEmissor#) and (`pefisaconsulta`.`DataEnvio` like #DataEnvio#) and (`pefisaconsulta`.`Produto` like #Produto#)]]></expression>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/PEFISA_CONSULTA_DB_where.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mappings>
+      <mapping endPosition="459">
+         <outputMapElements>
+            <outputMapElement isOutputMapping="true" tableName="pefisaconsulta" columnName="DataEnvio" elementPath="/root1/pefisaconsulta__DataEnvio/"/>
+            <outputMapElement isOutputMapping="true" tableName="pefisaconsulta" columnName="Horario" elementPath="/root1/pefisaconsulta__Horario/"/>
+            <outputMapElement isOutputMapping="true" tableName="pefisaconsulta" columnName="NomeArquivo" elementPath="/root1/pefisaconsulta__NomeArquivo/"/>
+            <outputMapElement isOutputMapping="true" tableName="pefisaconsulta" columnName="Produto" elementPath="/root1/pefisaconsulta__Produto/"/>
+            <outputMapElement isOutputMapping="true" tableName="pefisaconsulta" columnName="QtdeRegistros" elementPath="/root1/pefisaconsulta__QtdeRegistros/"/>
+            <outputMapElement isOutputMapping="true" tableName="pefisaconsulta" columnName="Controle" elementPath="/root1/pefisaconsulta__Controle/"/>
+            <outputMapElement isOutputMapping="true" tableName="pefisaconsulta" columnName="Total" elementPath="/root1/pefisaconsulta__Total/"/>
+            <outputMapElement isOutputMapping="true" tableName="pefisaconsulta" columnName="SituacaoArquivo" elementPath="/root1/pefisaconsulta__SituacaoArquivo/"/>
+            <outputMapElement isOutputMapping="true" tableName="pefisaconsulta" columnName="idEmissor" elementPath="/root1/pefisaconsulta__idEmissor/"/>
+         </outputMapElements>
+         <inputMapElements>
+            <inputMapElement tableName="pefisaconsulta" columnName="idEmissor" elementPath="/root/idEmissor/"/>
+            <inputMapElement tableName="pefisaconsulta" columnName="DataEnvio" elementPath="/root/DataEnvio/"/>
+            <inputMapElement tableName="pefisaconsulta" columnName="Produto" elementPath="/root/Produto/"/>
+         </inputMapElements>
+      </mapping>
+   </mappings>
+</databaseMap>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="6e34aa99-7d24-4742-99f6-673921dc68cd">
+   <signature appVersion="3.1.2" lastUpdatedOn="16/12/2021 10:01:23 -0300"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/PEFISA_CONSULTA_DB_where.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/JSON_Consulta.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="-1145861034" elementPath="/root/DataEnvio/">
+         <dmlExpression><![CDATA[in:\DataEnvio]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1222466238" elementPath="/root/Produto/">
+         <dmlExpression><![CDATA[in:\Produto]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1182497283" elementPath="/root/idEmissor/">
+         <dmlExpression><![CDATA[in:\IdEmissor]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<businessDocument xmlns="http://www.axway.com/mappingServices/jsonBusinessDocument" id="c6fb3ab5-7d1c-4692-af6c-75b31eeb1677" keepDecimalSeparatorCharacter="true" schema="~/Business Documents/jsonSchemaNotFis.json" keepDecimalSeparator="true" unknownProperties="allow" keepInputNumberFractionDigits="true" keepIntegerPlusSign="true" encodingBD="utf8" keepInputNumberDateDigits="true" keepPlusSign="true">
+   <signature appVersion="3.1.2" lastUpdatedOn="17/01/2022 10:42:16 -0300"/>
+</businessDocument>

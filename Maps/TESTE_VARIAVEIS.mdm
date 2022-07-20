@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="5284312a-e9a1-4591-a480-1073a4fd9997">
+   <signature appVersion="3.1.2" lastUpdatedOn="10/03/2022 15:12:53 -0300"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/TESTE3.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/CNAB400.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="-741327492" elementPath="/Root/SituacaoArquivo/">
+         <dmlExpression><![CDATA[getSubString( getAttribute("B2BXGIReceive_ReceivedHttpHeadersAsJSON"), 418, 9 )]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="86549880" elementPath="/Root/IdEmissor/">
+         <dmlExpression><![CDATA[getAttribute("B2BXGIReceive_ProductionFilename")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="95253270" elementPath="/Root/Produto/">
+         <dmlExpression><![CDATA[getAttribute("B2BXGIReceive_ReceivedHttpHeadersAsJSON")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="576687860" elementPath="/Root/DataEnvio/">
+         <dmlExpression><![CDATA[getDay( getDateAndTime (  ) )&getMonth( getDateAndTime (  ) )&getYear( getDateAndTime (  ) )]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="d9eca73b-db54-4f6e-bd53-24dafe01a4a9">
+   <signature appVersion="3.1.2" lastUpdatedOn="10/12/2021 11:26:14 -0300"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/Error.bdoc" alias="out"/>
+   <mapElements>
+      <mapElement elementHash="269073522" elementPath="/Root/Horario_Desc/">
+         <dmlExpression><![CDATA[getTime(getDateAndTime())]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="670902372" elementPath="/Root/Horario/">
+         <dmlExpression><![CDATA["Horario de Recebimento do Arquivo: "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-355234696" elementPath="/Root/Arquivo/">
+         <dmlExpression><![CDATA["Nome do Arquivo: "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1028629288" elementPath="/Root/Rejeicoes/">
+         <dmlExpression><![CDATA["Erros Encontrados no Arquivo: "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2014757653" elementPath="/Root/Status_Desc/">
+         <dmlExpression><![CDATA["Arquivo Rejeitado"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-1296776265" elementPath="/Root/Rejeicoes_DOC/">
+         <dmlExpression><![CDATA[if (%error = "") then { "Formato de Arquivo Invalido - Arquivo nao e um CNAB 400"} else %error]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1272267798" elementPath="/Root/Arquivo_Desc/">
+         <dmlExpression><![CDATA[getAttribute("B2BXGIReceive_ConsumptionFilename")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="417502594" elementPath="/Root/Empresa_Desc/">
+         <dmlExpression><![CDATA[getAttribute("B2BXGIReceive_SenderRoutingId")]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1796763329" elementPath="/Root/Empresa/">
+         <dmlExpression><![CDATA["Identificacao do Emissor: "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-337872591" elementPath="/Root/Status/">
+         <dmlExpression><![CDATA[setAttribute("B2BXGIReceive_ReceiverRoutingId","MATERA");
+"Status de Processamento: "]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>

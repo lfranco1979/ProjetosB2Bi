@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="de59c140-6cc3-47a5-a766-f8ffd68883f0">
+   <signature appVersion="3.1.2" lastUpdatedOn="20/12/2021 11:29:38 -0300"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/JsonConsultaRetorno.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/PEFISA_CONSULTA_RETORNO_Resultset.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementPath="/ELM/SituacaoArquivo/">
+         <dmlExpression><![CDATA[this\pefisaretorno__SituacaoArquivo]]></dmlExpression>
+      </mapElement>
+      <mapElement elementPath="/ELM/Horario/">
+         <dmlExpression><![CDATA[this\pefisaretorno__Horario]]></dmlExpression>
+      </mapElement>
+      <mapElement elementPath="/ELM/QtdeRegistros/">
+         <dmlExpression><![CDATA[this\pefisaretorno__QtdeRegistros]]></dmlExpression>
+      </mapElement>
+      <mapElement elementPath="/ELM/">
+         <dmlExpression><![CDATA[for each in:\root1]]></dmlExpression>
+      </mapElement>
+      <mapElement elementPath="/ELM/NomeArquivo/">
+         <dmlExpression><![CDATA[this\pefisaretorno__Nomearquivo]]></dmlExpression>
+      </mapElement>
+      <mapElement elementPath="/ELM/IdEmissor/">
+         <dmlExpression><![CDATA[this\pefisaretorno__idEmissor]]></dmlExpression>
+      </mapElement>
+      <mapElement elementPath="/ELM/Controle/">
+         <dmlExpression><![CDATA[this\pefisaretorno__Controle]]></dmlExpression>
+      </mapElement>
+      <mapElement elementPath="/ELM/CoreId/">
+         <dmlExpression><![CDATA[this\pefisaretorno__CoreId]]></dmlExpression>
+      </mapElement>
+      <mapElement elementPath="/ELM/DataEnvio/">
+         <dmlExpression><![CDATA[this\pefisaretorno__DataEnvio]]></dmlExpression>
+      </mapElement>
+      <mapElement elementPath="/ELM/Total/">
+         <dmlExpression><![CDATA[this\pefisaretorno__Total]]></dmlExpression>
+      </mapElement>
+      <mapElement elementPath="/ELM/Produto/">
+         <dmlExpression><![CDATA[this\pefisaretorno__Produto]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<customFunction xmlns="http://www.axway.com/mappingServices/jdbcCustomFunction" category="SQL" dmlClassReturn="S" id="d42c863e-09e1-4145-9a70-ed0f1e580bb3">
+   <dmlExpression><![CDATA[/*To test te connection use this querries.*/
+/* for MySQL/PostgreSQL use: select 1*/
+/*for Oracle use: select 1 from dual */
+/*for DB2 use: select 1 from sysibm.sysdummy1*/
+]]></dmlExpression>
+   <signature appVersion="3.1.2" lastUpdatedOn="14/02/2022 10:29:55 -0300"/>
+   <parameters>
+      <parameter dmlClass="S" name="param0" description="label param0"/>
+      <parameter dmlClass="S" name="param1" description="label param1"/>
+   </parameters>
+</customFunction>

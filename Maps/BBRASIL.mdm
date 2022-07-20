@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="c3646908-ab04-4a2b-a138-7a73d1b1b408">
+   <signature appVersion="3.1.2" lastUpdatedOn="25/02/2022 16:35:57 -0300"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/CNAB400.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/SWIFT_FIN_2020/MT028.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="-1645127664" elementPath="/Root/Header/Tipo_de_Registro/">
+         <dmlExpression><![CDATA["0"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-296950757" elementPath="/Root/Detalhe/Tipo_Registro/">
+         <dmlExpression><![CDATA["1"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="2056102434" elementPath="/Root/Header/Literal_de_Servico/">
+         <dmlExpression><![CDATA["COBRANCA       "]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1274174567" elementPath="/Root/Trailler/Tipo_Registro/">
+         <dmlExpression><![CDATA["9"]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>

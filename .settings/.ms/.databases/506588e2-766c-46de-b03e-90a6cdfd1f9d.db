@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<schemaView xmlns="http://www.axway.com/mappingServices/schemaView" identifierQuoteString="`" stringFunctions="DATABASE,USER,SYSTEM_USER,SESSION_USER,PASSWORD,ENCRYPT,LAST_INSERT_ID,VERSION" connection="MYSQL_AWS" numericFunctions="ABS,ACOS,ASIN,ATAN,ATAN2,BIT_COUNT,CEILING,COS,COT,DEGREES,EXP,FLOOR,LOG,LOG10,MAX,MIN,MOD,PI,POW,POWER,RADIANS,RAND,ROUND,SIN,SQRT,TAN,TRUNCATE" timeDateFunctions="DAYOFWEEK,WEEKDAY,DAYOFMONTH,DAYOFYEAR,MONTH,DAYNAME,MONTHNAME,QUARTER,WEEK,YEAR,HOUR,MINUTE,SECOND,PERIOD_ADD,PERIOD_DIFF,TO_DAYS,FROM_DAYS,DATE_FORMAT,TIME_FORMAT,CURDATE,CURRENT_DATE,CURTIME,CURRENT_TIME,NOW,SYSDATE,CURRENT_TIMESTAMP,UNIX_TIMESTAMP,FROM_UNIXTIME,SEC_TO_TIME,TIME_TO_SEC">
+   <tables>
+      <table catalog="%" name="pefisaretorno" type="TABLE" schema="b2bi">
+         <columns>
+            <column typeId="12" name="DataEnvio" primaryKeyType="NONE" databaseType="JDBC" precision="10" nullable="true" typeName="VARCHAR" tableName="pefisaretorno"/>
+            <column typeId="12" name="Horario" primaryKeyType="NONE" databaseType="JDBC" precision="6" nullable="true" typeName="VARCHAR" tableName="pefisaretorno"/>
+            <column typeId="12" name="Nomearquivo" primaryKeyType="NONE" databaseType="JDBC" precision="45" nullable="true" typeName="VARCHAR" tableName="pefisaretorno"/>
+            <column typeId="12" name="Produto" primaryKeyType="NONE" databaseType="JDBC" precision="45" nullable="true" typeName="VARCHAR" tableName="pefisaretorno"/>
+            <column typeId="12" name="QtdeRegistros" primaryKeyType="NONE" databaseType="JDBC" precision="45" nullable="true" typeName="VARCHAR" tableName="pefisaretorno"/>
+            <column typeId="12" name="Controle" primaryKeyType="NONE" databaseType="JDBC" precision="45" nullable="true" typeName="VARCHAR" tableName="pefisaretorno"/>
+            <column typeId="12" name="Total" primaryKeyType="NONE" databaseType="JDBC" precision="45" nullable="true" typeName="VARCHAR" tableName="pefisaretorno"/>
+            <column typeId="12" name="SituacaoArquivo" primaryKeyType="NONE" databaseType="JDBC" precision="45" nullable="true" typeName="VARCHAR" tableName="pefisaretorno"/>
+            <column typeId="12" name="idEmissor" primaryKeyType="NONE" databaseType="JDBC" precision="45" nullable="true" typeName="VARCHAR" tableName="pefisaretorno"/>
+            <column typeId="12" name="CoreId" primaryKeyType="NONE" databaseType="JDBC" precision="45" nullable="true" typeName="VARCHAR" tableName="pefisaretorno"/>
+         </columns>
+      </table>
+   </tables>
+</schemaView>

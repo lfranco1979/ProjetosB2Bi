@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="7f99eeb4-c0c2-4d86-8765-8f8d35f45f88">
+   <signature appVersion="3.1.2" lastUpdatedOn="21/06/2022 10:18:20 -0300"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/CNAB400_VARIOS.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/CNAB400.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="-1645127664" elementPath="/Root/Quebra/Header/Tipo_de_Registro/">
+         <dmlExpression><![CDATA["0"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-754467391" elementPath="/Root/Quebra/Tipo_Registro/">
+         <dmlExpression><![CDATA["@"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-296950757" elementPath="/Root/Quebra/Detalhe/Tipo_Registro/">
+         <dmlExpression><![CDATA["1"]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1274174567" elementPath="/Root/Quebra/Trailler/Tipo_Registro/">
+         <dmlExpression><![CDATA["9"]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>

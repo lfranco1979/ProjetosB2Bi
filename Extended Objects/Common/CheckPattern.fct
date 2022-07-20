@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<customFunction xmlns="http://www.axway.com/mappingServices/javaCustomFunction" methodName="analyzeRegexp" label="Verifies that a text matches a given pattern" className="com.axway.integrator.RegexpAnalyser" channel="NONE" category="JAVA" dmlClassReturn="B" id="c579dbe5-d295-4f88-b497-aaeacbf40919">
+   <signature appVersion="3.1.2" lastUpdatedOn="25/07/2018 14:38:17 +0300"/>
+   <parameters>
+      <parameter dmlClass="S" name="pattern" description="The pattern to match"/>
+      <parameter dmlClass="S" name="value" description="The text value to check"/>
+   </parameters>
+</customFunction>

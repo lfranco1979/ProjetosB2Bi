@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table xmlns="http://www.axway.com/mappingServices/table" beginDate="01/01/1900 12:00:00 -0234" endDate="29/12/2199 03:30:00 -0300" sendContentsToServer="true" id="c3d12706-e4c6-47ea-82c4-578d9701ce3f">
+   <signature appVersion="3.1.2" lastUpdatedOn="13/08/2015 03:30:29 -0300"/>
+   <columns>
+      <column dmlClass="S" name="CODE" definition="10" isKey="true"/>
+      <column dmlClass="S" name="Description" definition="255"/>
+      <column dmlClass="S" name="Start Date" definition="255" id="1"/>
+      <column dmlClass="S" name="End Date" definition="255" id="2"/>
+   </columns>
+   <rows>
+      <row>
+         <values>
+            <value>ERR001</value>
+            <value>Error: INVALID TIME</value>
+            <value>1900-01-01 12:23:20</value>
+            <value>2199-12-31 12:00:00</value>
+         </values>
+      </row>
+      <row>
+         <values>
+            <value>ERR002</value>
+            <value>Error: INVALID BIC</value>
+            <value>1900-01-01 12:23:20</value>
+            <value>2199-12-31 12:00:00</value>
+         </values>
+      </row>
+      <row>
+         <values>
+            <value>ERR003</value>
+            <value>Error: INVALID SENDER&apos;S ADDRESS</value>
+            <value>1900-01-01 12:23:20</value>
+            <value>2199-12-31 12:00:00</value>
+         </values>
+      </row>
+      <row>
+         <values>
+            <value>ERR004</value>
+            <value>Error: INVALID RECEIVER&apos;S ADDRESS</value>
+            <value>1900-01-01 12:23:20</value>
+            <value>2199-12-31 12:00:00</value>
+         </values>
+      </row>
+      <row>
+         <values>
+            <value>ERR005</value>
+            <value>Error: INVALID AMOUNT</value>
+            <value>1900-01-01 12:23:20</value>
+            <value>2199-12-31 12:00:00</value>
+         </values>
+      </row>
+      <row>
+         <values>
+            <value>ERR006</value>
+            <value>Error: CURRENCY CODE NOT INCLUDED IN STANDARD ISO 4217</value>
+            <value>1900-01-01 12:23:20</value>
+            <value>2199-12-31 12:00:00</value>
+         </values>
+      </row>
+   </rows>
+</table>

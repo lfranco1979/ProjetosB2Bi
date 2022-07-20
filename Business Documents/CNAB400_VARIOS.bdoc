@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<businessDocument xmlns="http://www.axway.com/mappingServices/flatFileBusinessDocument" keepInputNumberFractionDigits="true" encodingBD="iso8859" keepDecimalSeparator="true" id="8652c877-455e-419a-a0dc-a53de0073682" parentBDDelimiterValue="0x0d 0x0a" keepDecimalSeparatorCharacter="true" keepInputNumberDateDigits="true" parentBDDelimiter="2">
+   <signature appVersion="3.1.2" lastUpdatedOn="31/05/2017 23:37:39 -0300"/>
+   <childElements>
+      <childElement factoryType="FlatFileParent" order="1" label="Root" name="Root" parentDelimiterElement="3" hash="824032057">
+         <cardinality minimum="1" maximum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileParent" order="2" name="Quebra" parentDelimiterElement="3" hash="-559138590">
+               <cardinality minimum="1"/>
+               <childElements>
+                  <childElement factoryType="FlatFileLandMark" definition="1" typeId="10" paddingCharElement=" " name="Tipo_Registro" defaultValue="@" paddingPosElement="1" order="3" keepDecimalSeparator="true" encodingElement="iso8859" hash="-754467391" allowDistortion="true">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="FlatFileLeaf" definition="33" typeId="10" paddingCharElement=" " name="Leaf95" paddingPosElement="1" order="4" keepDecimalSeparator="true" encodingElement="iso8859" hash="-131358160" allowDistortion="true">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="FlatFileParent" order="5" alternateDelimiterElementValue="0x0d 0x0a" name="Header" parentDelimiterElementValue="0x0d 0x0a" parentDelimiterElement="2" hash="697319421">
+                     <cardinality minimum="1" maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="FlatFileLandMark" definition="1" typeId="10" nullable="true" paddingCharElement=" " name="Tipo_de_Registro" defaultValue="0" paddingPosElement="1" order="6" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1645127664" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="1" typeId="10" nullable="true" paddingCharElement=" " name="Codigo_de_Retorno" paddingPosElement="1" order="7" keepDecimalSeparator="true" encodingElement="iso8859" hash="1740493144" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="7" typeId="10" nullable="true" paddingCharElement=" " name="Literal_de_Retorno" paddingPosElement="1" order="8" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1516815613" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="2" typeId="10" nullable="true" paddingCharElement=" " name="Codigo_do_Servico" paddingPosElement="1" order="9" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1154079006" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="15" typeId="10" nullable="true" paddingCharElement=" " name="Literal_de_Servico" paddingPosElement="1" order="10" keepDecimalSeparator="true" encodingElement="iso8859" hash="2056102434" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="4" typeId="10" nullable="true" paddingCharElement=" " name="Agencia" paddingPosElement="1" order="11" keepDecimalSeparator="true" encodingElement="iso8859" hash="1670282528" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="2" typeId="10" nullable="true" paddingCharElement=" " name="Zeros" paddingPosElement="1" order="12" keepDecimalSeparator="true" encodingElement="iso8859" hash="92570719" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="5" typeId="10" nullable="true" paddingCharElement=" " name="Conta" paddingPosElement="1" order="13" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1140382061" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="1" typeId="10" nullable="true" paddingCharElement=" " name="DAC" paddingPosElement="1" order="14" keepDecimalSeparator="true" encodingElement="iso8859" hash="-913521449" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="8" typeId="10" nullable="true" paddingCharElement=" " name="Brancos" paddingPosElement="1" order="15" keepDecimalSeparator="true" encodingElement="iso8859" hash="470268404" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" nullable="true" paddingCharElement=" " name="Nome_Empresa" paddingPosElement="1" order="16" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1050880192" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="3" typeId="10" nullable="true" paddingCharElement=" " name="Codigo_Banco" paddingPosElement="1" order="17" keepDecimalSeparator="true" encodingElement="iso8859" hash="65440581" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="15" typeId="10" nullable="true" paddingCharElement=" " name="Nome_Banco" paddingPosElement="1" order="18" keepDecimalSeparator="true" encodingElement="iso8859" hash="1607284502" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="6" typeId="10" nullable="true" paddingCharElement=" " name="Data_Geracao" paddingPosElement="1" order="19" keepDecimalSeparator="true" encodingElement="iso8859" hash="-134460766" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="5" typeId="10" nullable="true" paddingCharElement=" " name="Densidade" paddingPosElement="1" order="20" keepDecimalSeparator="true" encodingElement="iso8859" hash="-553689963" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="3" typeId="10" nullable="true" paddingCharElement=" " name="Unidedade_Densidade" paddingPosElement="1" order="21" keepDecimalSeparator="true" encodingElement="iso8859" hash="1444023251" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="5" typeId="10" nullable="true" paddingCharElement=" " name="Numero_Seq_Retorno" paddingPosElement="1" order="22" keepDecimalSeparator="true" encodingElement="iso8859" hash="1071981806" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="6" typeId="10" nullable="true" paddingCharElement=" " name="Data_Credito" paddingPosElement="1" order="23" keepDecimalSeparator="true" encodingElement="iso8859" hash="-575938666" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="275" typeId="10" nullable="true" paddingCharElement=" " name="Complemento_Registro" paddingPosElement="1" order="24" keepDecimalSeparator="true" encodingElement="iso8859" hash="-225129958" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="6" typeId="10" paddingCharElement=" " name="Numero_Sequencial" paddingPosElement="1" order="25" keepDecimalSeparator="true" encodingElement="iso8859" hash="473137277" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="FlatFileParent" order="26" alternateDelimiterElementValue="0x0d 0x0a" name="Detalhe" parentDelimiterElementValue="0x0d 0x0a" parentDelimiterElement="2" hash="96930071">
+                     <cardinality minimum="1"/>
+                     <childElements>
+                        <childElement factoryType="FlatFileLandMark" definition="1" typeId="10" nullable="true" paddingCharElement=" " name="Tipo_Registro" defaultValue="1" paddingPosElement="1" order="27" keepDecimalSeparator="true" encodingElement="iso8859" hash="-296950757" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="2" typeId="10" nullable="true" paddingCharElement=" " name="Codigo_Inscricao" paddingPosElement="1" order="28" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1818080998" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="14" typeId="10" nullable="true" paddingCharElement=" " name="Numero_Inscricao" paddingPosElement="1" order="29" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1483051035" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="4" typeId="10" nullable="true" paddingCharElement=" " name="Agencia" paddingPosElement="1" order="30" keepDecimalSeparator="true" encodingElement="iso8859" hash="-374459394" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="2" typeId="10" nullable="true" paddingCharElement=" " name="Zeros_1" paddingPosElement="1" order="31" keepDecimalSeparator="true" encodingElement="iso8859" hash="1257272485" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="5" typeId="10" nullable="true" paddingCharElement=" " name="Conta" paddingPosElement="1" order="32" keepDecimalSeparator="true" encodingElement="iso8859" hash="-701049686" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="1" typeId="10" nullable="true" paddingCharElement=" " name="DAC" paddingPosElement="1" order="33" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1001291689" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="8" typeId="10" nullable="true" paddingCharElement=" " name="Brancos" paddingPosElement="1" order="34" keepDecimalSeparator="true" encodingElement="iso8859" hash="770005106" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="25" typeId="10" nullable="true" paddingCharElement=" " name="Uso_da_Empresa" paddingPosElement="1" order="35" keepDecimalSeparator="true" encodingElement="iso8859" hash="212828884" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="8" typeId="10" nullable="true" paddingCharElement=" " name="Nosso_Numero_1" paddingPosElement="1" order="36" keepDecimalSeparator="true" encodingElement="iso8859" hash="1519938968" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="12" typeId="10" nullable="true" paddingCharElement=" " name="Brancos_1" paddingPosElement="1" order="37" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1333016358" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="3" typeId="10" nullable="true" paddingCharElement=" " name="Carteira_1" paddingPosElement="1" order="38" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1192251463" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="8" typeId="10" nullable="true" paddingCharElement=" " name="Nosso_Numero_2" paddingPosElement="1" order="39" keepDecimalSeparator="true" encodingElement="iso8859" hash="1345343047" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="1" typeId="10" nullable="true" paddingCharElement=" " name="DAC_Nosso_Numero" paddingPosElement="1" order="40" keepDecimalSeparator="true" encodingElement="iso8859" hash="261818489" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="13" typeId="10" nullable="true" paddingCharElement=" " name="Brancos_2" paddingPosElement="1" order="41" keepDecimalSeparator="true" encodingElement="iso8859" hash="275341575" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="1" typeId="10" nullable="true" paddingCharElement=" " name="Carteira_2" paddingPosElement="1" order="42" keepDecimalSeparator="true" encodingElement="iso8859" hash="1612049822" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="2" typeId="10" nullable="true" paddingCharElement=" " name="Cod_Ocorrencia" paddingPosElement="1" order="43" keepDecimalSeparator="true" encodingElement="iso8859" hash="493271538" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="6" typeId="10" nullable="true" paddingCharElement=" " name="Data_Ocorrencia" paddingPosElement="1" order="44" keepDecimalSeparator="true" encodingElement="iso8859" hash="1105569779" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" nullable="true" paddingCharElement=" " name="Num_Documento" paddingPosElement="1" order="45" keepDecimalSeparator="true" encodingElement="iso8859" hash="76305265" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="8" typeId="10" nullable="true" paddingCharElement=" " name="Nosso_Numero" paddingPosElement="1" order="46" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1070431789" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="12" typeId="10" nullable="true" paddingCharElement=" " name="Brancos_3" paddingPosElement="1" order="47" keepDecimalSeparator="true" encodingElement="iso8859" hash="1000431859" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="6" typeId="10" nullable="true" paddingCharElement=" " name="Vencimento" paddingPosElement="1" order="48" keepDecimalSeparator="true" encodingElement="iso8859" hash="280429570" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="13" typeId="10" nullable="true" paddingCharElement=" " name="Valor_Titulo" paddingPosElement="1" order="49" keepDecimalSeparator="true" encodingElement="iso8859" hash="1132363039" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="3" typeId="10" nullable="true" paddingCharElement=" " name="Codigo_Banco" paddingPosElement="1" order="50" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1439766179" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="4" typeId="10" nullable="true" paddingCharElement=" " name="Agencia_Cobradora" paddingPosElement="1" order="51" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1936973343" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="1" typeId="10" nullable="true" paddingCharElement=" " name="DAC_Ag_Cobradora" paddingPosElement="1" order="52" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1096378155" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="2" typeId="10" nullable="true" paddingCharElement=" " name="Especie" paddingPosElement="1" order="53" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1225355876" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="13" typeId="10" nullable="true" paddingCharElement=" " name="Tarifa_Cobranca" paddingPosElement="1" order="54" keepDecimalSeparator="true" encodingElement="iso8859" hash="2095313571" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="26" typeId="10" nullable="true" paddingCharElement=" " name="Brancos_4" paddingPosElement="1" order="55" keepDecimalSeparator="true" encodingElement="iso8859" hash="444642424" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="13" typeId="10" nullable="true" paddingCharElement=" " name="Valor_IOF" paddingPosElement="1" order="56" keepDecimalSeparator="true" encodingElement="iso8859" hash="380355946" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="13" typeId="10" nullable="true" paddingCharElement=" " name="Valor_Abatimento" paddingPosElement="1" order="57" keepDecimalSeparator="true" encodingElement="iso8859" hash="1558875849" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="13" typeId="10" nullable="true" paddingCharElement=" " name="Descontos" paddingPosElement="1" order="58" keepDecimalSeparator="true" encodingElement="iso8859" hash="1721533831" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="13" typeId="10" nullable="true" paddingCharElement=" " name="Valor_Principal" paddingPosElement="1" order="59" keepDecimalSeparator="true" encodingElement="iso8859" hash="1918321541" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="13" typeId="10" nullable="true" paddingCharElement=" " name="Juros_de_Mora" paddingPosElement="1" order="60" keepDecimalSeparator="true" encodingElement="iso8859" hash="-183357474" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="13" typeId="10" nullable="true" paddingCharElement=" " name="Outros_Creditos" paddingPosElement="1" order="61" keepDecimalSeparator="true" encodingElement="iso8859" hash="-2003247837" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="1" typeId="10" nullable="true" paddingCharElement=" " name="Boleto_DDA" paddingPosElement="1" order="62" keepDecimalSeparator="true" encodingElement="iso8859" hash="-138042390" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="2" typeId="10" nullable="true" paddingCharElement=" " name="Brancos_5" paddingPosElement="1" order="63" keepDecimalSeparator="true" encodingElement="iso8859" hash="1120384029" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="6" typeId="10" nullable="true" paddingCharElement=" " name="Data_Credito" paddingPosElement="1" order="64" keepDecimalSeparator="true" encodingElement="iso8859" hash="1121600529" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="4" typeId="10" nullable="true" paddingCharElement=" " name="Instr_Cancelada" paddingPosElement="1" order="65" keepDecimalSeparator="true" encodingElement="iso8859" hash="1491966628" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="6" typeId="10" nullable="true" paddingCharElement=" " name="Brancos_6" paddingPosElement="1" order="66" keepDecimalSeparator="true" encodingElement="iso8859" hash="1231610822" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="13" typeId="10" nullable="true" paddingCharElement=" " name="Zeros" paddingPosElement="1" order="67" keepDecimalSeparator="true" encodingElement="iso8859" hash="1560112701" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="30" typeId="10" nullable="true" paddingCharElement=" " name="Nome_Sacado" paddingPosElement="1" order="68" keepDecimalSeparator="true" encodingElement="iso8859" hash="683965860" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="23" typeId="10" nullable="true" paddingCharElement=" " name="Brancos_7" paddingPosElement="1" order="69" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1858183177" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="8" typeId="10" nullable="true" paddingCharElement=" " name="Erro" paddingPosElement="1" order="70" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1372118515" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="7" typeId="10" nullable="true" paddingCharElement=" " name="Brancos_8" paddingPosElement="1" order="71" keepDecimalSeparator="true" encodingElement="iso8859" hash="1262828085" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="2" typeId="10" nullable="true" paddingCharElement=" " name="Cod_Liquidacao" paddingPosElement="1" order="72" keepDecimalSeparator="true" encodingElement="iso8859" hash="-597944250" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="6" typeId="10" nullable="true" paddingCharElement=" " name="Numero_Sequencial" paddingPosElement="1" order="73" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1168444344" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="FlatFileParent" order="74" alternateDelimiterElementValue="0x0d 0x0a" name="Trailler" parentDelimiterElementValue="0x0d 0x0a" parentDelimiterElement="2" hash="-342739893">
+                     <cardinality minimum="1" maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="FlatFileLandMark" definition="1" typeId="10" nullable="true" paddingCharElement=" " name="Tipo_Registro" defaultValue="9" paddingPosElement="1" order="75" keepDecimalSeparator="true" encodingElement="iso8859" hash="1274174567" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="1" typeId="10" nullable="true" paddingCharElement=" " name="Codigo_Retorno" paddingPosElement="1" order="76" keepDecimalSeparator="true" encodingElement="iso8859" hash="1638672205" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="2" typeId="10" nullable="true" paddingCharElement=" " name="Codigo_Servico" paddingPosElement="1" order="77" keepDecimalSeparator="true" encodingElement="iso8859" hash="-216895716" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="3" typeId="10" nullable="true" paddingCharElement=" " name="Codigo_Banco" paddingPosElement="1" order="78" keepDecimalSeparator="true" encodingElement="iso8859" hash="201025664" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" nullable="true" paddingCharElement=" " name="Brancos" paddingPosElement="1" order="79" keepDecimalSeparator="true" encodingElement="iso8859" hash="-672039784" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="8" typeId="10" nullable="true" paddingCharElement=" " name="Qtde_Titulos" paddingPosElement="1" order="80" keepDecimalSeparator="true" encodingElement="iso8859" hash="706302998" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="14" typeId="10" nullable="true" paddingCharElement=" " name="Valor_Total" paddingPosElement="1" order="81" keepDecimalSeparator="true" encodingElement="iso8859" hash="-293338786" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="8" typeId="10" nullable="true" paddingCharElement=" " name="Aviso_Bancario" paddingPosElement="1" order="82" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1363238125" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="10" typeId="10" nullable="true" paddingCharElement=" " name="Brancos_2" paddingPosElement="1" order="83" keepDecimalSeparator="true" encodingElement="iso8859" hash="1599999056" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="8" typeId="10" nullable="true" paddingCharElement=" " name="Qtde_Titulos_2" paddingPosElement="1" order="84" keepDecimalSeparator="true" encodingElement="iso8859" hash="337415481" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="14" typeId="10" nullable="true" paddingCharElement=" " name="Valor_Total_2" paddingPosElement="1" order="85" keepDecimalSeparator="true" encodingElement="iso8859" hash="224347238" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="8" typeId="10" nullable="true" paddingCharElement=" " name="Aviso_Bancario_2" paddingPosElement="1" order="86" keepDecimalSeparator="true" encodingElement="iso8859" hash="223927874" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="90" typeId="10" nullable="true" paddingCharElement=" " name="Brancos_3" paddingPosElement="1" order="87" keepDecimalSeparator="true" encodingElement="iso8859" hash="712650906" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="8" typeId="10" nullable="true" paddingCharElement=" " name="Qtde_Titulos_3" paddingPosElement="1" order="88" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1119540917" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="14" typeId="10" nullable="true" paddingCharElement=" " name="Valor_Total_3" paddingPosElement="1" order="89" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1049021478" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="8" typeId="10" nullable="true" paddingCharElement=" " name="Aviso_Bancario_3" paddingPosElement="1" order="90" keepDecimalSeparator="true" encodingElement="iso8859" hash="-730529147" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="5" typeId="10" nullable="true" paddingCharElement=" " name="Controle_Arquivo" paddingPosElement="1" order="91" keepDecimalSeparator="true" encodingElement="iso8859" hash="138616784" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="8" typeId="10" nullable="true" paddingCharElement=" " name="Qtde_Detalhes" paddingPosElement="1" order="92" keepDecimalSeparator="true" encodingElement="iso8859" hash="33828692" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="14" typeId="10" nullable="true" paddingCharElement=" " name="Valor_Total_Informado" paddingPosElement="1" order="93" keepDecimalSeparator="true" encodingElement="iso8859" hash="1166598657" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="160" typeId="10" nullable="true" paddingCharElement=" " name="Brancos_4" paddingPosElement="1" order="94" keepDecimalSeparator="true" encodingElement="iso8859" hash="948770888" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="FlatFileLeaf" definition="6" typeId="10" nullable="true" paddingCharElement=" " name="Numero_Sequencial" paddingPosElement="1" order="95" keepDecimalSeparator="true" encodingElement="iso8859" hash="-622930490" allowDistortion="true">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+               </childElements>
+            </childElement>
+         </childElements>
+      </childElement>
+   </childElements>
+</businessDocument>

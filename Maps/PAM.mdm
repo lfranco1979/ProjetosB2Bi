@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="97f4b13c-afd1-45e1-9d1d-14a0207c0c73">
+   <signature appVersion="3.1.2" lastUpdatedOn="11/01/2022 18:14:59 -0300"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/PAM.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/PAM.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mapElements>
+      <mapElement elementHash="1482482194" elementPath="/Root/Dados/Dados/">
+         <dmlExpression><![CDATA[this\Dados]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-561141705" elementPath="/Root/NMS/">
+         <dmlExpression><![CDATA[in:\Root\NMS]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="-138323773" elementPath="/Root/Dados/">
+         <dmlExpression><![CDATA[for each in:\Root\Dados]]></dmlExpression>
+      </mapElement>
+      <mapElement elementHash="1881661885" elementPath="/Root/ORG/">
+         <dmlExpression><![CDATA[in:\Root\ORG]]></dmlExpression>
+      </mapElement>
+   </mapElements>
+</map>

@@ -1,0 +1,41 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "DataEnvio": {
+        "type": "string"
+      },
+      "Horario": {
+        "type": ["string", "null"]
+      },
+      "NomeArquivo": {
+        "type": "string"
+      },
+      "Produto": {
+        "type": ["string", "null"]
+      },
+	  "QtdeRegistros": {
+        "type": ["string", "null"]
+      },
+      "Controle": {
+        "type": "string"
+      },
+      "Total": {
+        "type": ["string", "null"]
+      },
+      "SituacaoArquivo": {
+        "type": ["string", "null"]
+      },
+      "CoreId": {
+        "type": ["string", "null"]
+      },
+      "IdEmissor": {
+        "type": ["string", "null"]
+      }
+    },
+    "required": [
+      "IdEmissor"
+    ]
+  }
+}

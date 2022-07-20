@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseMap xmlns="http://www.axway.com/mappingServices/databaseMap" databaseHost="3.212.157.101" type="SELECT" databasePort="3306" databaseName="%" databaseType="MySql" id="ae1e23df-0dc3-4d43-aa8f-4da7da5876dd">
+   <signature appVersion="3.1.2" lastUpdatedOn="20/12/2021 11:24:24 -0300"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/PEFISA_CONSULTA_RETORNO_Resultset.bdoc" alias="out"/>
+   <expression><![CDATA[select `pefisaretorno`.`DataEnvio`,
+	`pefisaretorno`.`Horario`,
+	`pefisaretorno`.`Nomearquivo`,
+	`pefisaretorno`.`Produto`,
+	`pefisaretorno`.`QtdeRegistros`,
+	`pefisaretorno`.`Controle`,
+	`pefisaretorno`.`Total`,
+	`pefisaretorno`.`SituacaoArquivo`,
+	`pefisaretorno`.`idEmissor`,
+	`pefisaretorno`.`CoreId`
+from `pefisaretorno`
+where ((`pefisaretorno`.`idEmissor` = #idEmissor#) and (`pefisaretorno`.`DataEnvio` like #DataEnvio#) and (`pefisaretorno`.`Produto` like #Produto#))]]></expression>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/PEFISA_CONSULTA_RETORNO_where.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mappings>
+      <mapping endPosition="475">
+         <outputMapElements>
+            <outputMapElement isOutputMapping="true" tableName="pefisaretorno" columnName="DataEnvio" elementPath="/root1/pefisaretorno__DataEnvio/"/>
+            <outputMapElement isOutputMapping="true" tableName="pefisaretorno" columnName="Horario" elementPath="/root1/pefisaretorno__Horario/"/>
+            <outputMapElement isOutputMapping="true" tableName="pefisaretorno" columnName="Nomearquivo" elementPath="/root1/pefisaretorno__Nomearquivo/"/>
+            <outputMapElement isOutputMapping="true" tableName="pefisaretorno" columnName="Produto" elementPath="/root1/pefisaretorno__Produto/"/>
+            <outputMapElement isOutputMapping="true" tableName="pefisaretorno" columnName="QtdeRegistros" elementPath="/root1/pefisaretorno__QtdeRegistros/"/>
+            <outputMapElement isOutputMapping="true" tableName="pefisaretorno" columnName="Controle" elementPath="/root1/pefisaretorno__Controle/"/>
+            <outputMapElement isOutputMapping="true" tableName="pefisaretorno" columnName="Total" elementPath="/root1/pefisaretorno__Total/"/>
+            <outputMapElement isOutputMapping="true" tableName="pefisaretorno" columnName="SituacaoArquivo" elementPath="/root1/pefisaretorno__SituacaoArquivo/"/>
+            <outputMapElement isOutputMapping="true" tableName="pefisaretorno" columnName="idEmissor" elementPath="/root1/pefisaretorno__idEmissor/"/>
+            <outputMapElement isOutputMapping="true" tableName="pefisaretorno" columnName="CoreId" elementPath="/root1/pefisaretorno__CoreId/"/>
+         </outputMapElements>
+         <inputMapElements>
+            <inputMapElement tableName="pefisaretorno" columnName="idEmissor" elementPath="/root/idEmissor/"/>
+            <inputMapElement tableName="pefisaretorno" columnName="DataEnvio" elementPath="/root/DataEnvio/"/>
+            <inputMapElement tableName="pefisaretorno" columnName="Produto" elementPath="/root/Produto/"/>
+         </inputMapElements>
+      </mapping>
+   </mappings>
+</databaseMap>

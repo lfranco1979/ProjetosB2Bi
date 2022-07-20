@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<map xmlns="http://www.axway.com/mappingServices/map" id="b0ab04aa-60d3-4937-98f4-0cf05f227436">
+   <signature appVersion="3.1.2" lastUpdatedOn="10/03/2022 14:59:00 -0300"/>
+   <outputBusinessDocument businessDocument="~/Business Documents/JSON_Consulta.bdoc" alias="out"/>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/CNAB400.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+</map>

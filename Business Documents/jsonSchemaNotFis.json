@@ -1,0 +1,62 @@
+{
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "Remetente": {
+        "type": "string"
+      },
+      "Destinatario": {
+        "type": ["string", "null"]
+      },
+      "Data": {
+        "type": "string"
+      },
+      "Hora": {
+        "type": ["string", "null"]
+      },
+	  "Identificacao": {
+        "type": ["string", "null"]
+      },
+      "CGC": {
+        "type": "string"
+      },
+      "InscricaoEstadual": {
+        "type": ["string", "null"]
+      },
+      "Endereco": {
+        "type": ["string", "null"]
+      },
+      "Cidade": {
+        "type": ["string", "null"]
+      },
+	  "NotaFiscal": {
+        "type": ["string", "null"]
+      },
+      "Serie": {
+        "type": ["string", "null"]
+      },
+      "DataEmissao": {
+        "type": ["string", "null"]
+      },
+      "ValorTotalNF": {
+        "type": ["string", "null"]
+      },
+      "PesoTotalNF": {
+        "type": ["string", "null"]
+      },
+      "QtdeVolumes": {
+        "type": ["string", "null"]
+      },
+      "ValorTotalCobrado": {
+        "type": ["string", "null"]
+      },
+      "ChaveCTE": {
+        "type": ["string", "null"]
+      }
+    },
+    "required": [
+      "ChaveCTE"
+    ]
+  }
+}

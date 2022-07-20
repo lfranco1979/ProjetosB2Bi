@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<customFunction xmlns="http://www.axway.com/mappingServices/javaCustomFunction" methodName="isBicOrBeiLcBc" label="Verifies if a BIC is a  valid BIC or BEI (for compatibility)" className="com.axway.fex.mapping.basics.biciban.BicIbanFunc" channel="NONE" category="JAVA" dmlClassReturn="B" id="9dc3b168-423e-472f-b4c7-fea3e298892d">
+   <signature appVersion="3.0.1" lastUpdatedOn="13/08/2015 12:00:29 +0530"/>
+   <parameters>
+      <parameter dmlClass="S" name="lc" description="Valid Bank Code"/>
+      <parameter dmlClass="S" name="bc" description="Valid Branch Code"/>
+   </parameters>
+</customFunction>

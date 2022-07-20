@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<businessDocument xmlns="http://www.axway.com/mappingServices/flatFileBusinessDocument" keepInputNumberFractionDigits="true" encodingBD="iso8859" keepDecimalSeparator="true" id="046d5061-9b26-4540-88a5-9e7e02321ab6" keepDecimalSeparatorCharacter="true" keepInputNumberDateDigits="true">
+   <signature appVersion="3.1.2" lastUpdatedOn="26/08/2019 15:02:27 -0300"/>
+   <childElements>
+      <childElement factoryType="FlatFileParent" order="1" label="Root" name="Root" parentDelimiterElement="3" hash="652570028">
+         <cardinality minimum="1" maximum="1"/>
+         <childElements>
+            <childElement factoryType="FlatFileLeaf" definition="40" typeId="10" nullable="true" paddingCharElement=" " name="Status" paddingPosElement="1" order="2" keepDecimalSeparator="true" encodingElement="iso8859" hash="-337872591" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x0a" nullable="true" paddingCharElement=" " name="Status_Desc" leafDelimiterElement="2" paddingPosElement="1" order="3" keepDecimalSeparator="true" encodingElement="iso8859" hash="2014757653" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="40" typeId="10" nullable="true" paddingCharElement=" " name="Empresa" paddingPosElement="1" order="4" keepDecimalSeparator="true" encodingElement="iso8859" hash="1796763329" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x0a" nullable="true" paddingCharElement=" " name="Empresa_Desc" leafDelimiterElement="2" paddingPosElement="1" order="5" keepDecimalSeparator="true" encodingElement="iso8859" hash="417502594" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="40" typeId="10" nullable="true" paddingCharElement=" " name="Arquivo" paddingPosElement="1" order="6" keepDecimalSeparator="true" encodingElement="iso8859" hash="-355234696" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x0a" nullable="true" paddingCharElement=" " name="Arquivo_Desc" leafDelimiterElement="2" paddingPosElement="1" order="7" keepDecimalSeparator="true" encodingElement="iso8859" hash="1272267798" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="40" typeId="10" nullable="true" paddingCharElement=" " name="Horario" paddingPosElement="1" order="8" keepDecimalSeparator="true" encodingElement="iso8859" hash="670902372" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="0x0a" nullable="true" paddingCharElement=" " name="Horario_Desc" leafDelimiterElement="2" paddingPosElement="1" order="9" keepDecimalSeparator="true" encodingElement="iso8859" hash="269073522" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="40" typeId="10" nullable="true" paddingCharElement=" " name="Rejeicoes" paddingPosElement="1" order="10" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1028629288" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="FlatFileLeaf" definition="255" typeId="10" leafDelimiterElementValue="!EOF!" paddingCharElement=" " name="Rejeicoes_DOC" leafDelimiterElement="2" paddingPosElement="1" order="11" keepDecimalSeparator="true" encodingElement="iso8859" hash="-1296776265" allowDistortion="true">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+   </childElements>
+</businessDocument>

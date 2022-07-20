@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseMap xmlns="http://www.axway.com/mappingServices/databaseMap" databaseHost="3.212.157.101" type="INSERT" databasePort="3306" databaseName="%" databaseType="MySql" id="f1d4815d-2869-4fab-85ae-ead7b7b39435">
+   <signature appVersion="3.1.2" lastUpdatedOn="17/12/2021 14:15:43 -0300"/>
+   <outputBusinessDocument/>
+   <expression><![CDATA[insert into `pefisaconsulta` values (
+#DataEnvio#, 
+#Horario#, 
+#NomeArquivo#, 
+#Produto#, 
+#QtdeRegistros#, 
+#Controle#, 
+#Total#, 
+#SituacaoArquivo#, 
+#idEmissor#)
+]]></expression>
+   <inputBusinessDocuments>
+      <inputBusinessDocument businessDocument="~/Business Documents/Insert_Consulta_INSERT.bdoc" alias="in"/>
+   </inputBusinessDocuments>
+   <mappings>
+      <mapping endPosition="166">
+         <inputMapElements>
+            <inputMapElement tableName="pefisaconsulta" columnName="DataEnvio" elementPath="/root/DataEnvio/"/>
+            <inputMapElement tableName="pefisaconsulta" columnName="Horario" elementPath="/root/Horario/"/>
+            <inputMapElement tableName="pefisaconsulta" columnName="NomeArquivo" elementPath="/root/NomeArquivo/"/>
+            <inputMapElement tableName="pefisaconsulta" columnName="Produto" elementPath="/root/Produto/"/>
+            <inputMapElement tableName="pefisaconsulta" columnName="QtdeRegistros" elementPath="/root/QtdeRegistros/"/>
+            <inputMapElement tableName="pefisaconsulta" columnName="Controle" elementPath="/root/Controle/"/>
+            <inputMapElement tableName="pefisaconsulta" columnName="Total" elementPath="/root/Total/"/>
+            <inputMapElement tableName="pefisaconsulta" columnName="SituacaoArquivo" elementPath="/root/SituacaoArquivo/"/>
+            <inputMapElement tableName="pefisaconsulta" columnName="idEmissor" elementPath="/root/idEmissor/"/>
+         </inputMapElements>
+      </mapping>
+   </mappings>
+</databaseMap>

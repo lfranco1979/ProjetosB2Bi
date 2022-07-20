@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="utf-8"?>
+<businessDocument xmlns="http://www.axway.com/mappingServices/swiftSystemBusinessDocument" id="8e787305-7f66-412a-80f2-9dff20208bbb" bdocLibraryColl="Financial Standards Library V 3.10.0" bdocOriginalName="SWIFT_FIN_2020/MT008" label="System Request to Quit">
+   <signature appVersion="3.1.2" lastUpdatedOn="25/02/2022 16:33:33 -0300"/>
+   <childElements>
+      <childElement factoryType="SwiftBlock" order="1" name="1" label="Basic Header" hash="1134266990">
+         <cardinality minimum="1" maximum="1"/>
+         <childElements>
+            <childElement factoryType="SwiftComponent" hash="-1456436579" typeId="31" definition="1" allowDistortion="true" label="ApplicationIdentifier" nullable="true" defaultValue="F" order="2" name="ApplicationIdentifier">
+               <cardinality minimum="1" maximum="1"/>
+               <enumerationsList>
+                  <enumeration label="F" value="F"/>
+                  <enumeration order="1" label="A" value="A"/>
+                  <enumeration order="2" label="L" value="L"/>
+               </enumerationsList>
+            </childElement>
+            <childElement factoryType="SwiftComponent" hash="-388575158" typeId="15" definition="2" allowDistortion="true" label="ServiceIdentifier" nullable="true" defaultValue="01" order="3" name="ServiceIdentifier">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="SwiftComponent" hash="1935622938" typeId="31" definition="12" allowDistortion="true" label="LTIdentifier" nullable="true" order="4" name="LTIdentifier">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="SwiftComponent" hash="113386276" typeId="15" definition="4" allowDistortion="true" label="SessionNumber" nullable="true" order="5" name="SessionNumber">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+            <childElement factoryType="SwiftComponent" hash="1879292440" typeId="15" definition="6" allowDistortion="true" label="SequenceNumber" nullable="true" order="6" name="SequenceNumber">
+               <cardinality minimum="1" maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="SwiftBlock" order="7" name="2" label="Application Header" hash="112571038">
+         <cardinality maximum="1"/>
+         <childElements>
+            <childElement factoryType="SwiftChoice" order="8" name="CHOICE" label="CHOICE" hash="-1793600328">
+               <cardinality minimum="1" maximum="1"/>
+               <childElements>
+                  <childElement factoryType="SwiftSubField" order="9" label="Input" name="Input" hash="511695289">
+                     <cardinality maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="SwiftComponent" hash="-1336163664" typeId="31" definition="1" allowDistortion="true" label="Identifier" nullable="true" defaultValue="I" order="10" name="Identifier">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="SwiftComponent" hash="1526381750" typeId="15" definition="3" allowDistortion="true" label="MessageType" nullable="true" defaultValue="008" order="11" name="MessageType">
+                           <cardinality minimum="1" maximum="1"/>
+                           <enumerationsList>
+                              <enumeration value="008"/>
+                           </enumerationsList>
+                        </childElement>
+                        <childElement factoryType="SwiftComponent" hash="1641705796" typeId="31" definition="12" allowDistortion="true" label="ReceiverAddress" nullable="true" order="12" name="ReceiverAddress">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="SwiftComponent" hash="918028028" typeId="31" definition="1" allowDistortion="true" label="MessagePriority" nullable="true" order="13" name="MessagePriority">
+                           <cardinality minimum="1" maximum="1"/>
+                           <enumerationsList>
+                              <enumeration label="S" value="S"/>
+                           </enumerationsList>
+                        </childElement>
+                        <childElement factoryType="SwiftComponent" hash="-1526173226" typeId="15" definition="1" allowDistortion="true" label="DeliveryMonitoring" nullable="true" order="14" name="DeliveryMonitoring">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="SwiftComponent" hash="1738054190" typeId="15" definition="3" allowDistortion="true" label="ObsolescensePeriod" nullable="true" order="15" name="ObsolescensePeriod">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+                  <childElement factoryType="SwiftSubField" order="16" label="Output" name="Output" hash="-503292757">
+                     <cardinality maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="SwiftComponent" hash="2010426328" typeId="31" definition="1" allowDistortion="true" label="Identifier" nullable="true" defaultValue="O" order="17" name="Identifier">
+                           <cardinality maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="SwiftComponent" hash="-1414538202" typeId="15" definition="3" allowDistortion="true" label="MessageType" nullable="true" defaultValue="008" order="18" name="MessageType">
+                           <cardinality minimum="1" maximum="1"/>
+                           <enumerationsList>
+                              <enumeration value="008"/>
+                           </enumerationsList>
+                        </childElement>
+                        <childElement factoryType="SwiftComponent" hash="1097629556" typeId="40" definition="4" allowDistortion="true" label="InputTime" nullable="true" order="19" pattern="HHMM" name="InputTime">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="SwiftComponent" hash="-2019312715" typeId="31" definition="28" allowDistortion="true" label="MessageInputReference" nullable="true" order="20" name="MessageInputReference">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="SwiftComponent" hash="27464317" typeId="36" definition="6" allowDistortion="true" label="Date" nullable="true" order="21" pattern="YYMMDD" name="Date">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="SwiftComponent" hash="138009280" typeId="40" definition="4" allowDistortion="true" label="Time" nullable="true" order="22" pattern="HHMM" name="Time">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="SwiftComponent" hash="-1692606369" typeId="31" definition="1" allowDistortion="true" label="MessagePriority" nullable="true" order="23" name="MessagePriority">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+               </childElements>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="SwiftBlock" order="24" name="3" label="User Header" hash="-639045212">
+         <cardinality maximum="1"/>
+         <childElements>
+            <childElement factoryType="SwiftBlock" order="25" name="103" label="Service Identifier" hash="884582989">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="SwiftComponent" hash="560527976" typeId="11" definition="3" allowDistortion="true" nullable="true" order="26" name="Value">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="27" name="113" label="Banking Priority" hash="-1994905887">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="SwiftComponent" hash="309148558" typeId="19" definition="4" allowDistortion="true" nullable="true" order="28" name="Value">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="29" name="108" label="MUR" hash="-437121277">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="SwiftComponent" hash="-1398224473" typeId="18" definition="1,16" allowDistortion="true" nullable="true" order="30" name="Value">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="31" name="119" label="Validation Flag" hash="-43513477">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="SwiftComponent" hash="60700783" typeId="24" definition="1,8" allowDistortion="true" nullable="true" order="32" name="Value">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="33" name="423" label="balance-checkpoint-date-and-time" hash="-1147147090">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="SwiftComponent" hash="-514906829" typeId="36" definition="6" allowDistortion="true" nullable="true" order="34" pattern="YYMMDD" name="Value">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="SwiftComponent" hash="-122862389" typeId="39" definition="6" allowDistortion="true" nullable="true" order="35" pattern="HHMMSS" name="TIme">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="36" name="106" label="mir" hash="1528803630">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="SwiftComponent" hash="-566777945" typeId="11" definition="3" allowDistortion="true" nullable="true" order="37" name="Value">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="38" name="424" label="reference" hash="-1345550230">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="SwiftComponent" hash="-949526512" typeId="18" definition="1,16" allowDistortion="true" nullable="true" order="39" name="Value">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="40" name="111" label="ServiceTypeIdentifier" hash="-236301442">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="SwiftComponent" hash="675026035" typeId="15" definition="3" allowDistortion="true" nullable="true" order="41" name="Value">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="42" name="121" label="unique end toend transcation" hash="-156398213">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="SwiftComponent" hash="1765639887" typeId="19" definition="36" allowDistortion="true" nullable="true" order="43" name="Value">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="44" name="115" label="Address information" hash="-691196002">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="SwiftComponent" hash="-959674252" typeId="18" definition="1,32" allowDistortion="true" nullable="true" order="45" name="Value">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="46" name="165" label="Payment-Realse-Information-Reciever" hash="1601069840">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="SwiftComponent" hash="-649304764" typeId="43" definition="1" allowDistortion="true" nullable="true" order="47" name="Separator1">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="SwiftComponent" hash="-535505395" typeId="25" definition="3" allowDistortion="true" nullable="true" order="48" name="Value1">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="SwiftComponent" hash="-1911462562" typeId="43" definition="1" allowDistortion="true" nullable="true" order="49" name="Separator2">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="SwiftComponent" hash="2067253362" typeId="18" definition="1,34" allowDistortion="true" label="additional-information" nullable="true" order="50" name="Value2">
+                     <cardinality maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="51" name="433" label="sanctions-screening-receiver-information" hash="-365534282">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="SwiftComponent" hash="-197998118" typeId="43" definition="1" allowDistortion="true" nullable="true" order="52" name="Separator1">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="SwiftComponent" hash="-249424035" typeId="11" definition="3" allowDistortion="true" label="Code-Word" nullable="true" order="53" name="Value1">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="SwiftComponent" hash="643320225" typeId="43" definition="1" allowDistortion="true" nullable="true" order="54" name="Separator2">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="SwiftComponent" hash="-797439584" typeId="18" definition="1,20" allowDistortion="true" label="additional-information" nullable="true" order="55" name="Value2">
+                     <cardinality maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="56" name="434" label="payment-controls-information-for-receiver" hash="-1366808454">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="SwiftComponent" hash="1246981073" typeId="43" definition="1" allowDistortion="true" nullable="true" order="57" name="Separator1">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="SwiftComponent" hash="268677866" typeId="11" definition="3" allowDistortion="true" label="Code-Word" nullable="true" order="58" name="Value1">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="SwiftComponent" hash="-766846635" typeId="43" definition="1" allowDistortion="true" nullable="true" order="59" name="Separator2">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+                  <childElement factoryType="SwiftComponent" hash="129104497" typeId="18" definition="1,20" allowDistortion="true" label="additional-information" nullable="true" order="60" name="Value2">
+                     <cardinality maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="SwiftBlock" order="61" name="4" label="Text" hash="-1528825088">
+         <cardinality maximum="1"/>
+         <childElements>
+            <childElement factoryType="SwiftBlock" order="62" name="173" label="Day and time" hash="466551260">
+               <cardinality minimum="1" maximum="1"/>
+               <childElements>
+                  <childElement factoryType="SwiftComponent" hash="-1569779994" typeId="31" definition="6" allowDistortion="true" label="Day and time" nullable="true" order="63" name="daytime">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="SwiftBlock" order="64" name="5" label="Trailers" hash="-1188475615">
+         <cardinality maximum="1"/>
+         <childElements>
+            <childElement factoryType="SwiftBlock" order="65" name="CHK" hash="493568084">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="SwiftComponent" hash="781603029" typeId="31" definition="12" allowDistortion="true" nullable="true" order="66" name="Value">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="67" name="SYS" hash="-1971316448">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="SwiftSubField" order="68" name="subField" hash="-2144747898">
+                     <cardinality maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="SwiftComponent" hash="-1337064185" typeId="40" definition="4" allowDistortion="true" nullable="true" order="69" pattern="HHMM" name="time">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="SwiftComponent" hash="-787257554" typeId="30" definition="1,64" allowDistortion="true" nullable="true" order="70" name="mir">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="71" name="TNG" hash="1785761339">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="72" name="PDM" hash="2004879403">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="SwiftSubField" order="73" name="subField" hash="1288304568">
+                     <cardinality maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="SwiftComponent" hash="872524089" typeId="40" definition="4" allowDistortion="true" nullable="true" order="74" pattern="HHMM" name="time">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="SwiftComponent" hash="561656165" typeId="30" definition="1,64" allowDistortion="true" nullable="true" order="75" name="mir">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="76" name="DLM" hash="-673696791">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="77" name="MRF" hash="-1203481264">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="SwiftSubField" order="78" name="subField" hash="-647435900">
+                     <cardinality maximum="1"/>
+                     <childElements>
+                        <childElement factoryType="SwiftComponent" hash="1689599010" typeId="36" definition="6" allowDistortion="true" nullable="true" order="79" pattern="YYMMDD" name="date">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="SwiftComponent" hash="-1739565205" typeId="39" definition="6" allowDistortion="true" nullable="true" order="80" pattern="HHMMSS" name="time">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                        <childElement factoryType="SwiftComponent" hash="-1292730231" typeId="30" definition="1,64" allowDistortion="true" nullable="true" order="81" name="mir">
+                           <cardinality minimum="1" maximum="1"/>
+                        </childElement>
+                     </childElements>
+                  </childElement>
+               </childElements>
+            </childElement>
+         </childElements>
+      </childElement>
+      <childElement factoryType="SwiftBlock" order="82" name="S" label="S" hash="1807964007">
+         <cardinality maximum="1"/>
+         <childElements>
+            <childElement factoryType="SwiftBlock" order="83" name="SAC" hash="1811996984">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="84" name="SAF" hash="-135916816">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="85" name="SAO" hash="-1447259722">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="86" name="SAB" hash="2045264982">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="87" name="SAI" hash="2073608666">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="88" name="SAN" hash="-349741412">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="89" name="FAC" hash="-1337476942">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="90" name="FAF" hash="-672490215">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="91" name="FAO" hash="-1904522337">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="92" name="FAB" hash="377601744">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="93" name="FAI" hash="1372354912">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="94" name="FAN" hash="1477613601">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="SwiftComponent" hash="-1242264790" typeId="30" definition="1,255" allowDistortion="true" nullable="true" order="95" name="Value">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="96" name="COP" hash="691637792">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="SwiftComponent" hash="-1128068460" typeId="30" definition="1,1" allowDistortion="true" nullable="true" order="97" name="Value">
+                     <cardinality minimum="1" maximum="1"/>
+                     <enumerationsList>
+                        <enumeration label="P" value="P"/>
+                        <enumeration order="1" label="S" value="S"/>
+                     </enumerationsList>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="98" name="DAC" hash="-1093543143">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="SwiftComponent" hash="1450395543" typeId="30" definition="1,255" allowDistortion="true" nullable="true" order="99" name="Value">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="100" name="MAN" hash="-247152102">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="SwiftComponent" hash="2041650880" typeId="30" definition="1,255" allowDistortion="true" nullable="true" order="101" name="Value">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="102" name="RTV" hash="-2061535100">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="SwiftComponent" hash="1925382069" typeId="30" definition="1,255" allowDistortion="true" nullable="true" order="103" name="Value">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="104" name="TRN" hash="-1934047184">
+               <cardinality/>
+               <childElements>
+                  <childElement factoryType="SwiftComponent" hash="1342974932" typeId="18" definition="1,6" allowDistortion="true" nullable="true" order="105" name="Value">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="106" name="CON" hash="-1068217344">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="107" name="LAU" hash="-1134432220">
+               <cardinality maximum="1"/>
+               <childElements>
+                  <childElement factoryType="SwiftComponent" hash="1377779340" typeId="31" definition="8" allowDistortion="true" nullable="true" order="108" name="Value">
+                     <cardinality minimum="1" maximum="1"/>
+                  </childElement>
+               </childElements>
+            </childElement>
+            <childElement factoryType="SwiftBlock" order="109" name="SPD" hash="1525081667">
+               <cardinality maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+   </childElements>
+   <validationRules>
+      <validationRule name="CC_Block3_111_121">
+         <dmlExpression><![CDATA[if( (count(\!3!\!111! ) >0 and count(\!3!\!121!) = 0)) 
+then
+{
+    addTrace( "WARNING","\n Both tags 111 and 121 must be present.\n" );
+    %SWError:=%SWError & "\n Both tags 111 and 121 must be present.\n"
+};
+
+true]]></dmlExpression>
+      </validationRule>
+      <validationRule order="1" name="CC_Block3_165">
+         <dmlExpression><![CDATA[ if( count( \!2!\Input )>0)
+ then{if( count( \!3!\!165! ) >0 ) 
+ 	then{ addTrace ("WARNING", "\n Tag 165 is only allowed inside output messages \n");  
+ 	  %SWError:=%SWError & "\n Tag 165 is only allowed inside output messages \n"}};
+ 	  true]]></dmlExpression>
+      </validationRule>
+      <validationRule order="2" name="CC_Block_3">
+         <dmlExpression><![CDATA[if( count( \!2!\Input )>0)then{
+    if( count( \!3!\!115! ) >0 or count( \!3!\!433! )>0 or count( \!3!\!434! )>0 ) then{ 
+        addTrace ("WARNING", "Tags 115, 433, 434 are only allowed inside output messages"); 
+       %SWError:=%SWError & "Tags 115, 433, 434 are only allowed inside output messages"
+    }
+};true]]></dmlExpression>
+         <dmlComment><![CDATA[Tags 115 and 433 are only allowed inside output messages]]></dmlComment>
+      </validationRule>
+      <validationRule order="3" name="CC_DAY">
+         <dmlExpression><![CDATA[%SWstrTmp:=getStringLeft(\\!173!\daytime,2); %SWstrTmp1:=getSubString(\\!173!\daytime,3,2); %SWstrTmp2:=getSubString(\\!173!\daytime,5,2); if((%SWstrTmp < "01") or (%SWstrTmp > "31")) then { addTrace("WARNING", "CC_DAY (Invalid day) : " & %SWstrTmp); %SWError:=%SWError & "\n CC_DAY (Invalid day) : " & %SWstrTmp }; if((%SWstrTmp1 < "00") or (%SWstrTmp1 > "23")) then { addTrace("WARNING", "CC_DAY (Invalid hour) : " & %SWstrTmp1); %SWError:=%SWError & "\n CC_DAY (Invalid hour) : " & %SWstrTmp1 }; if((%SWstrTmp2 < "00") or (%SWstrTmp2 > "59")) then { addTrace("WARNING", "CC_DAY (Invalid minute) : " & %SWstrTmp2); %SWError:=%SWError & "\n CC_DAY (Invalid minute) : " & %SWstrTmp2 }; true]]></dmlExpression>
+      </validationRule>
+      <validationRule order="4" name="CM_BIC_TEST">
+         <dmlExpression><![CDATA[ %SWFlag:=true; %SWstrTmp:=getSubString(\!1!\LTIdentifier, 10 ,3); if(not \Common.IsBicOrBeiLcBc(getStringLeft(\!1!\LTIdentifier, 8), %SWstrTmp)) then { addTrace("WARNING", returnColumn(\SWTabErr, "ERR003")); %SWError:=%SWError & "\nT27 " & getStringLeft(\!1!\LTIdentifier, 8)& " " & %SWstrTmp }; if (count(\!2!\Input) > 0) then { %SWstrTmp:=getSubString(\!2!\Input\ReceiverAddress,10,3); if (not \Common.IsBicOrBeiLcBc(getStringLeft(\!2!\Input\ReceiverAddress,8),%SWstrTmp)) then { addTrace("WARNING", "Invalid BIC : T27 " & getStringLeft(\!2!\Input\ReceiverAddress,8) & %SWstrTmp); %SWError:=%SWError & "\nT27 " & getStringLeft(\!2!\Input\ReceiverAddress,8) & %SWstrTmp } } else { %SWstrTmp:=getSubString(\!2!\Output\MessageInputReference,16,3); if (not \Common.IsBicOrBeiLcBc(getSubString(\!2!\Output\MessageInputReference,7,8),%SWstrTmp)) then { addTrace("WARNING", "Invalid BIC : T27 " & getSubString(\!2!\Output\MessageInputReference,7,8) & %SWstrTmp); %SWError:=%SWError & "\nT27 " & getSubString(\!2!\Output\MessageInputReference,7,8) & %SWstrTmp } }; true]]></dmlExpression>
+      </validationRule>
+      <validationRule order="5" name="121">
+         <dmlExpression><![CDATA[if( count(  \!3!\!121!\Value)>0 )then{
+
+if not(\Common.CheckPattern("[0-9a-f]{1,8}[\\-]{1,1}[0-9a-f]{1,4}[\\-]{1,1}[4]{1,1}[0-9a-f]{1,3}[\\-]{1,1}[8-9a-b]{1,1}[0-9a-f]{1,3}[\\-]{1,1}[0-9a-f]{1,12}",  \!3!\!121!\Value)) then
+{
+       addTrace("WARNING", "Incorrect Pattern on field 121" & \!3!\!121!\Value & "\n");
+         %SWError:=%SWError & "Incorrect pattern on field 121: " & \!3!\!121!\Value & "\n" 
+
+      }
+};
+true
+
+]]></dmlExpression>
+      </validationRule>
+      <validationRule order="6" name="Z_ERROR">
+         <dmlExpression><![CDATA[if (%SWError <> "") then { setAttribute("PortalEnveloppe","Error",%SWError); false } else true]]></dmlExpression>
+      </validationRule>
+   </validationRules>
+</businessDocument>

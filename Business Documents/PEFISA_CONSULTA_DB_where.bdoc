@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<businessDocument xmlns="http://www.axway.com/mappingServices/databaseBusinessDocument" id="8202d58a-01af-46f3-a3d7-6dd223c7e1a9" keepDecimalSeparatorCharacter="true" keepDecimalSeparator="true" keepInputNumberFractionDigits="true" keepIntegerPlusSign="true" encodingBD="iso8859" keepInputNumberDateDigits="true" keepPlusSign="true">
+   <signature appVersion="3.1.2" lastUpdatedOn="16/12/2021 09:39:26 -0300"/>
+   <childElements>
+      <childElement factoryType="DatabaseParentElement" order="1" name="root" hash="962795563">
+         <cardinality minimum="1" maximum="1"/>
+         <childElements>
+            <childElement factoryType="DatabaseLeafElement" hash="-1182497283" typeId="10" definition="45" paddingCharElement=" " allowDistortion="true" nullable="true" keepDecimalSeparator="true" order="2" paddingPosElement="3" dbTypeName="string" encodingElement="iso8859" name="idEmissor">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="DatabaseLeafElement" hash="-1145861034" typeId="10" definition="10" paddingCharElement=" " allowDistortion="true" keepDecimalSeparator="true" order="3" paddingPosElement="3" encodingElement="iso8859" name="DataEnvio">
+               <cardinality maximum="1"/>
+            </childElement>
+            <childElement factoryType="DatabaseLeafElement" hash="1222466238" typeId="10" definition="45" paddingCharElement=" " allowDistortion="true" keepDecimalSeparator="true" order="4" paddingPosElement="3" encodingElement="iso8859" name="Produto">
+               <cardinality maximum="1"/>
+            </childElement>
+         </childElements>
+      </childElement>
+   </childElements>
+</businessDocument>

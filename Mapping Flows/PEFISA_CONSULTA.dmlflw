@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<flow xmlns="http://www.axway.com/mappingServices/flow" id="d7fd50be-f7c5-4bed-b5a4-59b24e153b13">
+   <signature appVersion="3.1.2" lastUpdatedOn="16/12/2021 10:10:45 -0300"/>
+   <channelLinks>
+      <channelLink name="Link1" hash="b88c2705-5f7c-4740-b676-f98d9b0793e9" virtual="true">
+         <source ref="7e855aa2-4a93-4ddc-9389-42b89d2827f2"/>
+         <target ref="f5a91d0e-14c5-45f9-99a4-d5ba9d1b7823"/>
+      </channelLink>
+   </channelLinks>
+   <channels>
+      <channel name="Channel" hash="f5a91d0e-14c5-45f9-99a4-d5ba9d1b7823">
+         <label/>
+         <ChannelType>
+            <![CDATA[DATABASE]]>
+         </ChannelType>
+      </channel>
+   </channels>
+   <configurationParameters>
+      <configurationParameter name="checkInputFacet" value="true"/>
+      <configurationParameter name="stopOnFirstInputFacetCheckError" value="true"/>
+      <configurationParameter name="checkInputCheckConstraints" value="false"/>
+      <configurationParameter name="stopOnFirstInputCheckConstraintsError" value="true"/>
+      <configurationParameter name="checkOutputFacet" value="false"/>
+      <configurationParameter name="stopOnFirstOutputFacetCheckError" value="true"/>
+      <configurationParameter name="checkOutputCheckConstraints" value="false"/>
+      <configurationParameter name="stopOnFirstOutputCheckConstraintsError" value="true"/>
+      <configurationParameter name="continueMessageProcessingOnError" value="false"/>
+      <configurationParameter name="groupAllResultingInstances" value="false"/>
+      <configurationParameter name="keepExactValue" value="false"/>
+      <configurationParameter name="copyAllAttributes" value="true"/>
+   </configurationParameters>
+   <graphLinks>
+      <graphLink factoryType="FlowMainLink" name="FlowLink1" type="TYPE_INPUT" connectedObjectAlias="in" hash="f918985d-6868-4f46-b5dd-82817e662300">
+         <source ref="b1c4be3f-5fe6-4a21-b536-5cb862b6befb"/>
+         <target ref="7db38c28-550d-4efd-b5e4-aa397722e3c2"/>
+      </graphLink>
+      <graphLink factoryType="FlowMainLink" name="FlowLink2" type="TYPE_OUTPUT" connectedObjectAlias="out" hash="2301b9b2-6961-47cb-9e51-f961fa37ffbc">
+         <source ref="2679c2cb-359f-4d3d-bab7-bbb63ae02ad2"/>
+         <target ref="89f4bf75-5aa4-469d-a866-ec3b0bbfffbe"/>
+      </graphLink>
+      <graphLink factoryType="FlowMainLink" name="FlowLink4" type="TYPE_OUTPUT" connectedObjectAlias="out" hash="12dfa0b9-c7a2-4d2e-9511-0cddce1b0675">
+         <source ref="9587f7c6-7b03-4b16-96e1-bfbdbadedae4"/>
+         <target ref="eb50d3e6-b09f-4410-963a-3b1b300a5f2f"/>
+      </graphLink>
+      <graphLink factoryType="FlowMainLink" name="FlowLink6" type="TYPE_OUTPUT" connectedObjectAlias="out" hash="2b8f815c-e3b4-4562-82ab-ff37c05592cc">
+         <source ref="85abac60-94d5-4ba9-85e5-4ee805d3b4dc"/>
+         <target ref="4d02255a-74f4-4076-bab0-2516c617bc0c"/>
+      </graphLink>
+      <graphLink name="Link1" hash="678308ba-34aa-4d8e-9746-e82ae4c7f5dc">
+         <source ref="05dfcc1a-ff62-440d-b2f0-e03761d0456d"/>
+         <target ref="b1c4be3f-5fe6-4a21-b536-5cb862b6befb"/>
+      </graphLink>
+      <graphLink factoryType="FlowMainLink" name="FlowLink3" type="TYPE_INPUT" connectedObjectAlias="in" hash="67d477b2-957f-46a3-a97d-2e0db9794304">
+         <source ref="89f4bf75-5aa4-469d-a866-ec3b0bbfffbe"/>
+         <target ref="7e855aa2-4a93-4ddc-9389-42b89d2827f2"/>
+      </graphLink>
+      <graphLink factoryType="FlowMainLink" name="FlowLink5" type="TYPE_INPUT" connectedObjectAlias="in" hash="83cf42a2-29db-4282-88ce-8173a5413bfd">
+         <source ref="eb50d3e6-b09f-4410-963a-3b1b300a5f2f"/>
+         <target ref="ba0a13f0-8cc6-4e56-b38b-d30ec48ef8c1"/>
+      </graphLink>
+      <graphLink name="Link2" hash="fd38c68b-bef3-4fcf-a0e8-88a33d88b4b1">
+         <source ref="4d02255a-74f4-4076-bab0-2516c617bc0c"/>
+         <target ref="1cf840a1-3386-48cd-9a31-cdc031b5fd65"/>
+      </graphLink>
+   </graphLinks>
+   <graphNodes>
+      <graphNode factoryType="InputEntity" name="Input" hash="05dfcc1a-ff62-440d-b2f0-e03761d0456d">
+         <bounds height="60" width="135" y="30"/>
+      </graphNode>
+      <graphNode factoryType="GraphicalInstructionBlock" name="Main_Block_PEFISA_CONSULTA1" nameDisplayed="true" hash="7db38c28-550d-4efd-b5e4-aa397722e3c2">
+         <bounds x="300" height="120" width="177" y="3"/>
+         <intructions>
+            <instruction factoryType="GraphicalInstructionMap" name="Entrada_Consulta" nameDisplayed="true" mapName="~/Maps/Entrada_Consulta_Remessa.mdm" hash="2679c2cb-359f-4d3d-bab7-bbb63ae02ad2">
+               <bounds height="60" width="135" y="20"/>
+            </instruction>
+         </intructions>
+      </graphNode>
+      <graphNode factoryType="GraphicalBusinessDocumentEntity" name="JSON_Consulta" hash="b1c4be3f-5fe6-4a21-b536-5cb862b6befb">
+         <bounds x="150" height="60" width="135" y="30"/>
+         <documentName>~/Business Documents/JSON_Consulta.bdoc</documentName>
+      </graphNode>
+      <graphNode factoryType="GraphicalBusinessDocumentEntity" name="PEFISA_CONSULTA_DB_where" hash="89f4bf75-5aa4-469d-a866-ec3b0bbfffbe">
+         <bounds x="492" height="60" width="135" y="25"/>
+         <documentName>~/Business Documents/PEFISA_CONSULTA_DB_where.bdoc</documentName>
+      </graphNode>
+      <graphNode factoryType="GraphicalInstructionBlockDatabase" name="PEFISA_CONSULTA_DB" nameDisplayed="true" hash="7e855aa2-4a93-4ddc-9389-42b89d2827f2">
+         <bounds x="642" height="120" width="177" y="3"/>
+         <channelLinks>
+            <channelLink ref="b88c2705-5f7c-4740-b676-f98d9b0793e9"/>
+         </channelLinks>
+         <intructions>
+            <instruction factoryType="GraphicalInstructionDatabaseMap" name="PEFISA_CONSULTA_DB" nameDisplayed="true" mapName="~/Maps/PEFISA_CONSULTA_DB.mdm" hash="9587f7c6-7b03-4b16-96e1-bfbdbadedae4">
+               <bounds height="60" width="135" y="20"/>
+            </instruction>
+         </intructions>
+      </graphNode>
+      <graphNode factoryType="GraphicalBusinessDocumentEntity" name="PEFISA_CONSULTA_DB_Resultset" hash="eb50d3e6-b09f-4410-963a-3b1b300a5f2f">
+         <bounds x="834" height="60" width="135" y="25"/>
+         <documentName>~/Business Documents/PEFISA_CONSULTA_DB_Resultset.bdoc</documentName>
+      </graphNode>
+      <graphNode factoryType="GraphicalInstructionBlock" name="Main_Block_PEFISA_CONSULTA2" nameDisplayed="true" hash="ba0a13f0-8cc6-4e56-b38b-d30ec48ef8c1">
+         <bounds x="984" height="120" width="177" y="3"/>
+         <intructions>
+            <instruction factoryType="GraphicalInstructionMap" name="Consulta_Saida" nameDisplayed="true" mapName="~/Maps/Saida_Consulta_Remessa.mdm" hash="85abac60-94d5-4ba9-85e5-4ee805d3b4dc">
+               <bounds height="60" width="135" y="20"/>
+            </instruction>
+         </intructions>
+      </graphNode>
+      <graphNode factoryType="GraphicalBusinessDocumentEntity" name="JsonRetorno" hash="4d02255a-74f4-4076-bab0-2516c617bc0c">
+         <bounds x="1176" height="60" width="135" y="25"/>
+         <documentName>~/Business Documents/JsonConsultaRemessa.bdoc</documentName>
+      </graphNode>
+      <graphNode factoryType="OutputEntity" name="out1" hash="1cf840a1-3386-48cd-9a31-cdc031b5fd65">
+         <bounds x="1326" height="60" width="135" y="25"/>
+      </graphNode>
+   </graphNodes>
+</flow>
